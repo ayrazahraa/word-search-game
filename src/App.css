@@ -1,0 +1,30 @@
+.word-search-game {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: yellow;
+}
+
+.word-list span {
+  margin: 0 10px;
+}
+
+.word-list span.found {
+  text-decoration: line-through;
+  color: green;
+}
